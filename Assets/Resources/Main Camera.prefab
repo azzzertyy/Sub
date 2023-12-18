@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5705498509434337314}
   - component: {fileID: 115445545272449098}
   - component: {fileID: 8444225344233933237}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 153848294862006369}
   serializedVersion: 2
   m_LocalRotation: {x: 0.06486158, y: -0, z: -0, w: 0.9978943}
-  m_LocalPosition: {x: 0, y: 6.7, z: 2.36}
+  m_LocalPosition: {x: 0, y: 3.7, z: 5.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -116,7 +116,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0

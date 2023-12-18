@@ -2,63 +2,112 @@
     "name": "Input",
     "maps": [
         {
-            "name": "Wheel",
-            "id": "2cf22d59-9ae9-44b6-96a2-ed18e867f505",
+            "name": "Player",
+            "id": "c7474a03-325b-42ce-b594-050ab545e545",
             "actions": [
-                {
-                    "name": "Accelerate",
-                    "type": "Value",
-                    "id": "61067b52-7587-4801-9d8b-5b6b282730bc",
-                    "expectedControlType": "Analog",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
-                    "name": "Brake",
-                    "type": "Value",
-                    "id": "42b0ec17-ef91-422d-9e5c-0ee6449c511e",
-                    "expectedControlType": "Analog",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
                 {
                     "name": "Turn",
                     "type": "Value",
-                    "id": "c7ee2cdd-34a4-48d7-bc93-3e25e3ccf8bb",
-                    "expectedControlType": "Stick",
+                    "id": "ae9edd83-890e-433f-b66e-b5c651b85ade",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Accelerate",
+                    "type": "Value",
+                    "id": "6d4b7fa5-3420-403c-bc0a-b6e6a713effa",
+                    "expectedControlType": "Analog",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "BrakePedal",
+                    "type": "Value",
+                    "id": "fd57abee-271a-44b4-9196-72fcd9b8136d",
+                    "expectedControlType": "Analog",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "BallastUp",
+                    "type": "Button",
+                    "id": "74955176-8507-415f-9cb6-1e01417da3aa",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "BallastDown",
+                    "type": "Button",
+                    "id": "678251e6-886b-4af1-8761-cc6cc1d19b6f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Torpedo",
+                    "type": "Button",
+                    "id": "1d167bbc-aedd-4d32-bc0c-77141f76c4ac",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
                 {
                     "name": "",
-                    "id": "a38b7c1c-611b-418b-a158-779b88ba887b",
-                    "path": "<Joystick>/rz",
+                    "id": "ce6dde81-3b51-4164-bbb1-02f19aa76768",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
-                    "processors": "Invert,Normalize(min=-1,max=1,zero=-1)",
-                    "groups": "Wheel",
+                    "processors": "",
+                    "groups": "",
                     "action": "Accelerate",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "f93bfec3-d394-4452-950c-0308bceb73ab",
-                    "path": "<Joystick>/stick/y",
+                    "id": "4a73580e-8c15-4efd-a50b-0e1c2280529a",
+                    "path": "<Joystick>/rz",
                     "interactions": "",
-                    "processors": "Normalize(min=-1,max=1,zero=-1)",
-                    "groups": "Wheel",
-                    "action": "Brake",
+                    "processors": "Invert,Normalize(min=-1,max=1,zero=-1)",
+                    "groups": "",
+                    "action": "Accelerate",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "32989436-9296-48bd-a137-99ab4ae62e40",
+                    "id": "53e0df50-df05-4e8b-aaa1-a0ea66c09625",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BrakePedal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ba5eed54-4ebc-454f-997f-5a2fc7b8aadd",
+                    "path": "<Joystick>/stick/y",
+                    "interactions": "",
+                    "processors": "Normalize(min=-1,max=1,zero=-1)",
+                    "groups": "",
+                    "action": "BrakePedal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "915bdad1-1759-442f-a551-602eef2f80f6",
                     "path": "<Joystick>/stick",
                     "interactions": "",
                     "processors": "",
@@ -69,7 +118,7 @@
                 },
                 {
                     "name": "2D Vector",
-                    "id": "29ec8d7d-cc50-4bdb-adcb-9005e7e998d8",
+                    "id": "af494e22-ff40-4e2e-b006-25db92dbfa06",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
@@ -80,7 +129,7 @@
                 },
                 {
                     "name": "up",
-                    "id": "6cb39a6f-4d3d-4283-8347-170bb2fee34d",
+                    "id": "33231803-5947-4831-92b6-b853538bee43",
                     "path": "",
                     "interactions": "",
                     "processors": "",
@@ -91,7 +140,7 @@
                 },
                 {
                     "name": "down",
-                    "id": "a43d62f2-3fca-46a6-95f3-906f42090ff9",
+                    "id": "d6a9a7e6-1b4d-44a5-96ea-5a44ffc03c4d",
                     "path": "",
                     "interactions": "",
                     "processors": "",
@@ -102,7 +151,7 @@
                 },
                 {
                     "name": "left",
-                    "id": "2cf508a6-d511-42b5-8980-a0359645c52a",
+                    "id": "9e56839f-c302-47e6-965a-a571ec9fcdac",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -113,7 +162,7 @@
                 },
                 {
                     "name": "right",
-                    "id": "c3c95029-1937-4f92-a43a-d1917e1ab738",
+                    "id": "39246a21-48f6-423b-9f98-652917a14771",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
@@ -121,15 +170,136 @@
                     "action": "Turn",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "ff17c34e-d492-4a3b-9668-d2606dac633b",
+                    "path": "<Joystick>/stick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BallastUp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1092f4fe-39c0-49c9-b766-6b058e24713c",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BallastUp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "99e5b684-a457-4a6f-98de-08dc6607b177",
+                    "path": "<Joystick>/stick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BallastDown",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "284316ce-cb82-4f6d-bd1b-ec1f5f71a03f",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BallastDown",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3d0c9e5d-6e67-4ad7-9756-718b3217db92",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Torpedo",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5fc6406e-4a4f-4728-80ce-87e0b1385213",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Torpedo",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
     ],
     "controlSchemes": [
         {
-            "name": "Wheel",
-            "bindingGroup": "Wheel",
-            "devices": []
+            "name": "Keyboard&Mouse",
+            "bindingGroup": "Keyboard&Mouse",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Gamepad",
+            "bindingGroup": "Gamepad",
+            "devices": [
+                {
+                    "devicePath": "<Gamepad>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Touch",
+            "bindingGroup": "Touch",
+            "devices": [
+                {
+                    "devicePath": "<Touchscreen>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Joystick",
+            "bindingGroup": "Joystick",
+            "devices": [
+                {
+                    "devicePath": "<Joystick>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "XR",
+            "bindingGroup": "XR",
+            "devices": [
+                {
+                    "devicePath": "<XRController>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
         }
     ]
 }
