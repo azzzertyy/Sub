@@ -6,13 +6,12 @@ using Photon.Pun;
 public class SpawnPlayers : MonoBehaviour
 {
     public GameObject playerPrefab;
+    public float spawnRadius = 100f;
 
-
-    // Start is called before the first frame update
     void Start()
     {
-        PhotonNetwork.Instantiate(playerPrefab.name, new Vector3(0,0,0), Quaternion.identity);
+        Vector3 randomSpawnPoint = Random.insideUnitSphere * spawnRadius;
+        randomSpawnPoint.y = 0f;
+        PhotonNetwork.Instantiate(playerPrefab.name, randomSpawnPoint, Quaternion.identity);
     }
-
-    
 }

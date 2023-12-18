@@ -452,6 +452,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 6213310444993144001, guid: b1b289bbdc894180db549cdcac7e36bc,
     type: 3}
+  spawnRadius: 100
 --- !u!4 &2044616653
 Transform:
   m_ObjectHideFlags: 0
@@ -479,6 +480,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Global Volume
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317207657874931400, guid: 614db1cd2129e8d5d84489ae0e8a2819,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4694377014468528107, guid: 614db1cd2129e8d5d84489ae0e8a2819,
         type: 3}
