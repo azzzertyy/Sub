@@ -77,6 +77,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 95a451b0972cb534996f78654aafc7aa, type: 3}
+  m_Resource: {fileID: 8300000, guid: 95a451b0972cb534996f78654aafc7aa, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.457
   m_Pitch: 1
@@ -451,6 +452,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 056d24918b95d2bc2844d1035c9820a5, type: 3}
+  m_Resource: {fileID: 8300000, guid: 056d24918b95d2bc2844d1035c9820a5, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.635
   m_Pitch: 1
@@ -595,6 +597,8 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
